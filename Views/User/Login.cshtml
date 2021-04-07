@@ -1,0 +1,39 @@
+﻿@model UberDriver.Models.LoginViewModel
+
+
+@{ ViewBag.Title = "Log In"; }
+
+<link href="~/Content/login.css" rel="stylesheet" />
+<section class="login">
+    <div class="row-top"></div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div>
+                <h3> <i> Log In </i></h3>
+                <p>
+                    Please enter your username and password.
+                    @Html.ActionLink("Register", "Register", "User", null, new { @class = "text text-warning" })  to create a new account.
+                </p>
+            </div>
+            <text style="color:red"> @ViewBag.Message</text>
+            @using (Html.BeginForm(true))
+            {
+                <div class="form-group">
+                    <label> User Name: </label>
+                    @Html.ValidationMessageFor(m => m.Username)<br />
+                    @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label> Password: </label>
+                    @Html.ValidationMessageFor(m => m.Password)<br />
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                </div>
+                <input type="submit" value="Log In" class="btn btn-warning" />}
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+</section>
+
+

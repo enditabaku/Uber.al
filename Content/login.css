@@ -1,0 +1,15 @@
+﻿.login {
+    width: 100%;
+    height: 100vh;
+    background-image: url('Images/bg1 - Copy.jpg') !important;
+    background-position: center top;
+    background-size: cover;
+}
+
+.row-top{
+    height:200px;
+}
+
+.nav div.main_list ul li a {
+    color: #a0929c;
+}

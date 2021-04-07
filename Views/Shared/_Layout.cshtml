@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="~/Content/navbar.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+
+
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container-nav">
+            <div class="logo">
+                <a href="@Url.Action("Index", "Home")">Uber.al</a> 
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="@Url.Action("AboutUs", "Home")">About us</a></li>
+                    <li><a href="@Url.Action("Login", "User")">Log In</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <!--Body Content-->
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <!--Footer section-->
+    <footer id="dk-footer" class="dk-footer">
+        <div class="container-foot">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="dk-footer-box-info">
+                        <div class="footer-social-link">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- End Social link -->
+                    </div>
+                    <!-- End Footer info -->
+
+                </div>
+                <!-- End Col -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>Tirana Albania</h3>
+                                </div>
+                                <!-- End Contact Us -->
+                            </div>
+                            <!-- End Col -->                             
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>+355 68 10 10 000</h3>
+                                    <p>Give us a call</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Contact Row -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <div class="section-heading">
+                                    <h3>Useful Links</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="@Url.Action("AboutUs", "Home")">About us</a>
+                                    </li>
+                                   
+                                </ul>
+
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <!-- End col -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget">
+                                <div class="section-heading">
+                                    <h3>Find your destination</h3>
+                                    <span class="animate-border border-black" style="margin-bottom:35px"></span>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.google.com/maps/d/u/0/embed?mid=1u1tzdO8fGiJb50_vt1Hv1LLo584&msa=0&ie=UTF8&t=m&ll=41.00063000000002%2C20.072020999999978&spn=3.31645%2C4.394531&z=8&output=embed" target="_blank">Albanian Map</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- End form -->
+                            </div>
+                            <!-- End footer widget -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Widget Row -->
+        </div>
+        <!-- End Contact Container -->
+
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Copyright © 2021, All Right Reserved Uber.al</span>
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Copyright Container -->
+        </div>
+        <!-- End Copyright -->
+
+    </footer>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <script>
+        $('.navTrigger').click(function () {
+            $(this).toggleClass('active');
+            console.log("Clicked menu");
+            $("#mainListDiv").toggleClass("show_list");
+            $("#mainListDiv").fadeIn();
+
+        });
+    </script>
+</body>
+</html>
