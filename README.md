@@ -15,6 +15,11 @@ For Back-End:
 For Database:
 * [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
+For Front-End:
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+* [Bootstrap 4](https://getbootstrap.com/)
+
 ## Screenshots
 ![Screenshots](https://github.com/enditabaku/Uber.al/blob/main/Content/Images/Screen1.png)
 ![Screenshots](https://github.com/enditabaku/Uber.al/blob/main/Content/Images/Screen2.png)
