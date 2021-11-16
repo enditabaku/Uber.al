@@ -16,9 +16,9 @@ For Database:
 * [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
 ## Screenshots
-![Screenshots](../Content/Images/Screen1.png)
-![Screenshots](~/Content/Images/Screen2.png)
-![Screenshots](~/Content/Images/Screen3.png)
+![Screenshots](https://github.com/enditabaku/Uber.al/blob/main/Content/Images/Screen1.png)
+![Screenshots](https://github.com/enditabaku/Uber.al/blob/main/Content/Images/Screen2.png)
+![Screenshots](https://github.com/enditabaku/Uber.al/blob/main/Content/Images/Screen3.png)
 ## Notes
 
 >>>>>>> School project UI
